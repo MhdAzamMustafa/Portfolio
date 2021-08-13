@@ -104,8 +104,12 @@ section .title::after{
     color: brown;
     transition: all 0.3s ease;
 }
+
+.navbar.sticky .logo a {
+    color: #fff;    
+}
 .navbar.sticky .logo a span{
-    color: #fff;
+    color: #222;
 }
 .navbar .menu li{
     list-style: none;
