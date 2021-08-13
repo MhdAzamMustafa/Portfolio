@@ -104,8 +104,12 @@ section .title::after{
     color: brown;
     transition: all 0.3s ease;
 }
+
+.navbar.sticky .logo a {
+    color: #fff;    
+}
 .navbar.sticky .logo a span{
-    color: #fff;
+    color: #222;
 }
 .navbar .menu li{
     list-style: none;
@@ -121,9 +125,11 @@ section .title::after{
 }
 .navbar .menu li a:hover{
     color: brown;
+    font-size: 23px;   
+    transition: all 0.3s ease;
 }
 .navbar.sticky .menu li a:hover{
-    color: #fff;
+    color: #222;
 }
 
 /* menu btn styling */
@@ -187,6 +193,15 @@ section .title::after{
     font-size: 75px;
     font-weight: 600;
     margin-left: -3px;
+    text-shadow: 7px 2px brown;
+}
+.home .home-content .text-2:hover{
+    font-size: 76px;
+    font-weight: 600;
+    margin-left: -3px;
+    color: brown;
+    text-shadow: 4px 2px #fff;
+    transition: all 0.4s ease;
 }
 .home .home-content .text-3{
     font-size: 40px;
@@ -204,13 +219,16 @@ section .title::after{
     padding: 12px 36px;
     margin-top: 20px;
     font-weight: 400;
-    border-radius: 6px;
+    border-radius: 0px 10px 0px 10px;
+    text-shadow: 2px -2px #222;
     border: 2px solid brown;
     transition: all 0.3s ease;
 }
 .home .home-content a:hover{
     color: brown;
     background: none;
+    text-shadow: -2px -1px #fff;
+    border-radius: 10px 0px 10px 0px;
 }
 
 /* about section styling */
@@ -226,6 +244,15 @@ section .title::after{
     object-fit: cover;
     border-radius: 6px;
 }
+.about .about-content .left img:hover{
+    height: 425px;
+    width: 425px;
+    object-fit: cover;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    margin: 15px 0px 15px 0px;
+    
+}
 .about .about-content .right{
     width: 55%;
 }
@@ -233,9 +260,19 @@ section .title::after{
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 10px;
-}
+} 
 .about .about-content .right .text span{
     color: brown;
+}
+
+.about .about-content .right .text b{
+    color: brown;
+    text-shadow: 1px 2px #222;                 
+    
+}
+.about .about-content .right .text b:hover{
+    color: brown;
+    font-size: 35px;
 }
 .about .about-content .right p{
     text-align: justify;
@@ -248,13 +285,16 @@ section .title::after{
     font-weight: 500;
     padding: 10px 30px;
     margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid brown;
+    border-radius: 0px 10px 0px 10px;
+    text-shadow: 2px 2px #222;
+    border: 2px solid brown;    
     transition: all 0.3s ease;
 }
 .about .about-content .right a:hover{
     color: brown;
     background: none;
+    text-shadow: 1px 1px #222;
+    border-radius: 10px 0px 10px 0px;
 }
 
 /* services section styling */
@@ -327,13 +367,17 @@ section .title::after{
     font-weight: 500;
     padding: 8px 16px;
     margin-top: 20px;
-    border-radius: 6px;
+    border-radius: 0px 10px 0px 10px;
+    text-shadow: 2px -2px #222;
     border: 2px solid brown;
     transition: all 0.3s ease;
 }
 .skills .skills-content .left a:hover{
     color: brown;
     background: none;
+    
+    text-shadow: -1px 1px #222;
+    border-radius: 10px 0px 10px 0px;
 }
 .skills .skills-content .right .bars{
     margin-bottom: 15px;
@@ -525,7 +569,8 @@ section .title::after{
   outline: none;
   font-size: 18px;
   font-weight: 500;
-  border-radius: 6px;
+  border-radius: 0px 10px 0px 10px;
+  text-shadow: 2px 2px #222;
   cursor: pointer;
   flex-wrap: nowrap;
   background: brown;
@@ -535,6 +580,8 @@ section .title::after{
 .right form .button-area button:hover{
   color: brown;
   background: none;
+  border-radius: 10px 0px 10px 0px;
+  text-shadow: -1px -1px #222;
 }
 /* footer section styling */
 footer{
@@ -649,6 +696,9 @@ footer span a:hover{
 }
 
 @media (max-width: 500px) {
+    .home{
+        background: url("images/banner.jpg") no-repeat center;
+    }
     .home .home-content .text-2{
         font-size: 50px;
     }
